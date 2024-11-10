@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mica Gambling</title>
+   <link rel="stylesheet" href="guessing.css">
+</head>
+<body>
+    <div id="loadingScreen">
+        <p id="loadingText">Loading... 0%</p>
+    </div>
+    <div id="gameContainer" style="display: none;">
+        <!-- Game content goes here -->
+        <h6>Welcome To Marvelous Guessing Game </h6>
+        <h6>💶💶💵🦾ወደ ማርቨለስ የግምት ጨወታ እንኻን በደህና መጡ💶💶💵🦾</h6>
+        
+        <!-- Help link -->
+        <p><a href="#help-section">How to Play</a></p>
+
+        <form action="">
+             <label for="deposit">Deposit (min of 10):</label>
+             <input type="number" id="depositInput" min="10">
+             <button type="button" id="depositBtn" class="bt">Deposit(ያስቀምጡ)</button>
+
+             <p id="currentBalance">Current Balance: 0 birr</p>
+                <!-- User input -->
+                <label for="input">Enter a number (1-100):</label>
+                <input type="number" id="input">
+                <button type="button" id="guessBtn" class="bt" disabled>Guess(ገምት)</button>
+                <p id="re"></p>
+                <p id="res"></p>
+                <button id="withdrawBtn" class="bt" type="button">Withdraw</button>
+                <button id="resetBalanceBtn" class="bt" type="button">Reset Balance</button>
+        </form>
+        <div class="footer">
+            <p style="color: hsl(348, 83%, 47%);">Developed by <a href="mailto:marvelethio2026@gmail.com">Micheale Abrha Mesfin, 2025 G.C, All rights are reserved.</a></p>
+            <p>Or <a href="tel:+251943706813">Call me</a></p>
+        </div>
+
+        <!-- Help section -->
+        <section id="help-section" style="padding: 20px; margin-top: 20px; background-color: #f4f4f4;">
+            <h2>How to Play the Marvelous Guessing Game</h2>
+            <ol>
+                <li><strong>Deposit Money:</strong> To start playing, deposit at least 10 Birr (use the input box and click "Deposit").</li>
+                <li><strong>Make a Guess:</strong> Once you've deposited money, you can guess a number between 1 and 100 by entering it into the "Enter a number (1-100)" input box and clicking "Guess".</li>
+                <li><strong>Game Feedback:</strong> 
+                    <ul>
+                        <li>If your guess is correct, you win 10 Birr.</li>
+                        <li>If your guess is too high or too low, the game will let you know how far off your guess was.</li>
+                        <li>You have 6 attempts to guess the correct number.</li>
+                        <li>If you run out of attempts, you lose 10 Birr.</li>
+                    </ul>
+                </li>
+                <li><strong>Withdraw:</strong> If you have enough balance, you can withdraw some money by clicking the "Withdraw" button.</li>
+                <li><strong>Reset Balance:</strong> You can reset your balance to zero by clicking the "Reset Balance" button.</li>
+            </ol>
+        </section>
+    </div>
+
+    <script src="gu.js"></script>
+</body>
+</html>
